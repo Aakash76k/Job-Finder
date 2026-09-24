@@ -8,7 +8,81 @@
 </head>
 <body>
 
-    
+    <!-- Navbar -->
+
+    <header class="navbar">
+        <div class="logo">
+            Job <span>Finder</span>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#saved">Saved Jobs</a>
+            <a href="#about">About</a>
+        </nav>
+        <button class="login-btn">Login</button>
+    </header>
+
+    <!-- Hero Section -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your <span>Dream Job</span></h1>
+            <p>Search thousand of jobs and find the perfect opportunity for your career.</p>
+
+            <!-- Search Box -->
+             <div class="search-box">
+                <input type="text"
+                id="searchInput"
+                placeholder="Search job title, skills..."
+                >
+
+                <input type="text"
+                id="locationInput"
+                placeholder="Location"
+                >
+
+                <button id="searchBtn">Search Jobs</button>
+             </div>
+        </div>
+     </section>
+
+     <!-- Jobs Section -->
+
+     <section class="jobs-section" id="jobs">
+        <div class="section-heading">
+            <h2>Latest Jobs</h2>
+            <p>Explore the latest opportunities</p>
+        </div>
+
+        <!-- Filters -->
+
+        <div class="filters">
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="backend">Backend Developer</option>
+                <option value="fullstack">Full Stack Developer</option>
+                <option value="javascript">Javascript Developer</option>
+            </select>
+
+            <select id="jobTypeFiler">
+                <option value="all">All Job Types</option>
+                <option value="full-time">Full Time</option>
+                <option value="part-time">Part Time</option>
+                <option value="intership">Internship</option>
+            </select>
+
+            <select id="sortFilter">
+                <option value="default">Sort By</option>
+                <option value="salary-high">Salary: High to Low</option>
+                <option value="salary-low">Salary: Low to High</option>
+            </select>
+        </div>
+
+        
+     </section>
+
     <script src="script.js"></script>
 </body>
 </html>
